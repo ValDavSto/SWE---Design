@@ -9,5 +9,7 @@ public class DatabaseController {
     public static void addCopy(Book book, Copy copy){}
     public static void removeBook(Book book){}
     public static void removeCopy(Book book, Copy copy){}
-    public static void DatabaseController()
+    public static void lendBooks(RentalManagemet lendings){}
+    public static void returnBook(RentalMangement returns){};
+    
 }
