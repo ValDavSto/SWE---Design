@@ -225,7 +225,7 @@
                 <y:AttributeLabel xml:space="preserve"/>
                 <y:MethodLabel xml:space="preserve">+ rentBook(copyID : Integer) : Bool
 + returnBook(copyID : Integer) : Bool
-+ reservate_copy(
++ reservateCopy(
         book : Book, copy : Copy) : Bool</y:MethodLabel>
               </y:UML>
             </y:UMLClassNode>
