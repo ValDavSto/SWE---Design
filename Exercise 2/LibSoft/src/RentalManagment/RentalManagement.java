@@ -1,4 +1,10 @@
+import Lender.*;
+
 public static void RentalManagement {
+
+  public RentalMangement() {
+
+  }
 
   public Bool rentBook(int copyID) {
 
@@ -8,7 +14,7 @@ public static void RentalManagement {
 
   }
 
-  public Bool reservateCopy(int copyID) {
+  public Bool reservateCopy(int copyID, Lender lender) {
 
   }
 
