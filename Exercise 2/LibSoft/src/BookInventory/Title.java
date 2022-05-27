@@ -1,4 +1,4 @@
-package bookInventory;
+package BookInventory;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

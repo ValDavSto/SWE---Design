@@ -1,4 +1,4 @@
-package LenderModule;
+package Lender;
 
 public class Lender {
     private int matrikel_number;

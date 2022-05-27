@@ -1,8 +1,8 @@
 package RentalManagment;
 
-import LenderModule.Lender;
-import bookInventory.Book;
-import bookInventory.Copy;
+import Lender.Lender;
+import BookInventory.Book;
+import BookInventory.Copy;
 
 import java.time.LocalDate;
 

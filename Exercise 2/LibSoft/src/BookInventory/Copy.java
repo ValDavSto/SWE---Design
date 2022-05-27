@@ -1,4 +1,4 @@
-package bookInventory;
+package BookInventory;
 
 public class Copy {
     private int copy_id;

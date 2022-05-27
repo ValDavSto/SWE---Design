@@ -1,21 +1,23 @@
+package RentalManagment;
 import Lender.*;
+public class RentalManagement{
 
-public static void RentalManagement {
-
-  public RentalMangement() {
-
+  public RentalManagement() {
   }
 
-  public Bool rentBook(int copyID) {
-
-  }  
-
-  public Bool returnBook(int copyID) {
-
+  public boolean rentBook(int copyID) {
+    return true;
   }
 
-  public Bool reservateCopy(int copyID, Lender lender) {
-
+  public boolean returnBook(int copyID) {
+    return true;
   }
 
+  public boolean reservateCopy(int copyID, Lender lender) {
+    return true;
+  }
 }
+
+
+
+

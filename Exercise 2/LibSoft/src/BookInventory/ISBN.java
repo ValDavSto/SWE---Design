@@ -1,4 +1,4 @@
-package bookInventory;
+package BookInventory;
 
 public class ISBN {
     private int prefix;

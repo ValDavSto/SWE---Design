@@ -1,4 +1,4 @@
-package bookInventory;
+package BookInventory;
 
 import java.util.ArrayList;
 

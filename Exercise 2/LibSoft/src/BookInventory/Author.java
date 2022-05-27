@@ -1,4 +1,4 @@
-package bookInventory;
+package BookInventory;
 
 public class Author {
     private String first_name;
