@@ -1,28 +1,26 @@
 package BookInventory;
 
-public interface Catalogue {
+public class Catalogue {
 
-    default boolean checkAvailability(String name) {
+    public boolean searchBook(String name) { return true; }
+
+    public boolean checkAvailability(ISBN isbn) {
         return true;
     }
 
-    default boolean checkAvailability(ISBN isbn) {
+    public boolean addBook(Copy copy) {
         return true;
     }
 
-    default boolean addBook(Copy copy) {
+    public boolean createBook(Book book) {
         return true;
     }
 
-    default boolean createBook(Book book) {
+    public boolean checkISBN(ISBN isbn) {
         return true;
     }
 
-    default boolean checkISBN(ISBN isbn) {
-        return true;
-    }
-
-    default boolean generateBibTeX(Book book) {
+    public boolean generateBibTeX(Book book) {
         return true;
     }
 

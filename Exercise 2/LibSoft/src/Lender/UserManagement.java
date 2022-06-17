@@ -1,12 +1,12 @@
 package Lender;
 
-public interface UserManagement {
+public class UserManagement {
 
-    default boolean deactiveUser(int matrikelNumber) {
+    public boolean deactiveUser(int matrikelNumber) {
         return true;
     }
 
-    default boolean registerUser(int matrikelNumber, String firstName, String lastName) {
+    public boolean registerUser(int matrikelNumber, String firstName, String lastName) {
         return true;
     }
     
