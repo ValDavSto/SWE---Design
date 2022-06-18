@@ -32,7 +32,7 @@ The class `LenderManagment` is the **information expert** for the management of 
 
 In Exercise 2 we already mentioned  the resposebilitiey 
 
-The `Catalogue` class is the **information expert** for the management of the library's inventory. It functions as a **creator** for objects of the classes `Book` which get created in the methods `removeBook`, `checkBookAvailability`, `findBookLocation` and as a **creator** for objects of the classes `Copy` created in the method `openOnlineLocation` and `checkBookAvailability`. To be able to get a high **cohesion** and low **coupling** we include all methods which relate to the book inventory in `Catalogue`, the following methods fall under this responsibility:`removeBook`, `checkBookAvailability`, `findBookLocation`
+As mentioned above the `Catalogue` class is the **information expert** for the management of the library's inventory and functions a **creator** of instances of the classes `Book` and `Copy`, which are created within the methods. As the methods `removeBook`,`checkBookAvailability`, `findBookLocation`, `openOnlineLocation` relate the the management of the books and copies they are part of the `Catalogue`. We enable **low coupling** and **high cohesion** by only taking methods into account which create instances of `Book` or `Copy` (methods like `reserveBook` which can also be seen as management of books were not added to the catalog if they require more objects besides book or copy which would destroy the principle of low coupling and high cohesion).
 
 #### UserManagement
 
