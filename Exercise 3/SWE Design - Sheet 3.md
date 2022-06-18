@@ -6,15 +6,15 @@
 
 `searchBook`; `checkAvailability`; `addBook`; `createBook` ; `checkISBN`; `generateBibTex`
 
-The class `Catalogue` is the **information expert** for the management of the whole library inventory.<br>It also functions as a **creator** for an object of the classes `Book` and `Copy` which get created with the<br/>methods `createBook` and `addCopy`. To be able to get a high **cohesion** and low **coupling** we include<br>all methods which relate to the book inventory in `Catalogue`, the following methods fall under this<br>responsibility:<br>`searchBook`, `checkAvailability`, `checkISBN`, `generateBibTex`
+The class `Catalogue` is the **information expert** for the management of the whole library inventory.<br>The `Catalogue` has the knowledge of all books in the inventory and an object `Book` contains all the<br>information about the book and how many and which copies of a certain book exists.<br>All responsibilities which care about retrieving information's about books/copies or adding/removing<br>books/copies are assigned to the class `Catalogoue`.  This is also the reason why it functions as **creator**<br>for objects of the classes `Book` and `Copy` which get created with the methods `createBook` and `addCopy`.<br>To be able to get a high **cohesion** and low **coupling** we include all methods which relate to the book<br>inventory in `Catalogue`, the following methods fall under this responsibility:<br>`searchBook`, `checkAvailability`, `checkISBN`, `generateBibTex`
 
 
 
-#### UserManagment
+#### UserManagement
 
 `deactivateUser`; `registerUser`; 
 
-The class `UserManagment` is the **information expert** for the management of the users using the<br>LibSoft System. With the method `registerUser` the class functions as a **creator** for objects of<br>the class `Lender`. With the method `deactivateUser` is also in the class to ensure high **cohesion**<br>and low **coupling**.
+The class `UserManagement` is the **information expert** for the management of the users using the<br>LibSoft System. Because the class knows everything about the users using the LibSoft System<br>the responsibilities which are used to administering those users are a part of the class `UserManagement`.<br>One of those responsibilities is to register new users to the LibSoft System, that is why the method  `registerUser`<br>is part of the class, with this method the class functions as a **creator** for objects of the class `Lender`. <br>To ensure high **cohesion** and low **coupling** also the method `deactivateUser` is included in the class `UserManagement`.
 
 
 
@@ -22,13 +22,15 @@ The class `UserManagment` is the **information expert** for the management of th
 
 `rentBook`; `returnBook`;
 
-The class `LenderManagment` is the **information expert** for the management of the book rentals.<br> With the method `rentBook` the class functions as a **creator** for objects of the class `Rental`. <br>The method `returnBook` is also included in the `LenderManagment` to fulfill high **cohesion**<br>and low **coupling**.
+The class `LenderManagment` is the **information expert** for the management of the book rentals.<br>The `RentalManagement` knows and tracks all the rented books and reservations and knows to which lender they are<br>assigned. Also the rental history of books and lender is known by the `RentalMangement`. All responsibilities which fall<br>under this area get assign to the class, which is for the method `rentBook` the case, which also make `RenatalMangement`<br>to a **creator** for objects of the class `Rental`. <br>The method `returnBook` is also included in the `LenderManagment` to fulfill high **cohesion**<br>and low **coupling**.
 
 ## Exercise 3
 
 #### Catalogue
 
 `removeBook`; `checkBookAvailability`; `findBookLocation`; `openOnlineLocation`
+
+In Exercise 2 we already mentioned  the resposebilitiey 
 
 The `Catalogue` class is the **information expert** for the management of the library's inventory. It functions as a **creator** for objects of the classes `Book` which get created in the methods `removeBook`, `checkBookAvailability`, `findBookLocation` and as a **creator** for objects of the classes `Copy` created in the method `openOnlineLocation` and `checkBookAvailability`. To be able to get a high **cohesion** and low **coupling** we include all methods which relate to the book inventory in `Catalogue`, the following methods fall under this responsibility:`removeBook`, `checkBookAvailability`, `findBookLocation`
 
