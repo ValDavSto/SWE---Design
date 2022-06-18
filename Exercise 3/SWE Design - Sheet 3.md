@@ -4,9 +4,9 @@
 
 ![uml](/home/max/GitHub/SWE---Design/Exercise 3/UML/uml.png)
 
-(The diagram includes the methods added in exercise 3 and the corresponding controller methods)
-
-
+- The diagram includes the methods added in exercise 3 and the corresponding controller methods
+- [https://github.com/ValDavSto/SWE---Design/blob/main/Exercise%203/UML/uml.png](https://github.com/ValDavSto/SWE---Design/blob/main/Exercise%203/UML/uml.png)
+- The java files can be found in the appendix. Arguments were passed either with `0` or `null` to avoid errors. the events of class `Event` marked in the UML diagram were omitted, because they are normally part of the respective GUI frameworks.
 
 ## Exercise 2
 
