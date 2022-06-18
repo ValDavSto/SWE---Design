@@ -22,7 +22,7 @@ The class `UserManagement` is the **information expert** for the management of t
 
 `rentBook`; `returnBook`;
 
-The class `LenderManagment` is the **information expert** for the management of the book rentals.<br>The `RentalManagement` knows and tracks all the rented books and reservations and knows to which lender they are<br>assigned. Also the rental history of books and lender is known by the `RentalMangement`. All responsibilities which fall<br>under this area get assign to the class, which is for the method `rentBook` the case, which also make `RenatalMangement`<br>to a **creator** for objects of the class `Rental`. <br>The method `returnBook` is also included in the `LenderManagment` to fulfill high **cohesion**<br>and low **coupling**.
+The class `RentalManagement` is the **information expert** for the management of the book rentals.<br>The `RentalManagement` knows and tracks all the rented books and reservations and knows to which lender they are<br>assigned. Also the rental history of books and lender is known by the `RentalMangement`. All responsibilities which fall<br>under this area get assign to the class, which is for the method `rentBook` the case, which also make `RenatalMangement`<br>to a **creator** for objects of the class `Rental`. <br>The method `returnBook` is also included in the `LenderManagment` to fulfill high **cohesion**<br>and low **coupling**.
 
 ## Exercise 3
 
