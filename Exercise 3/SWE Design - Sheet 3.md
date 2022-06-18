@@ -8,6 +8,20 @@
 - [https://github.com/ValDavSto/SWE---Design/blob/main/Exercise%203/UML/uml.png](https://github.com/ValDavSto/SWE---Design/blob/main/Exercise%203/UML/uml.png)
 - The java files can be found in the appendix. Arguments were passed either with `0` or `null` to avoid errors. the events of class `Event` marked in the UML diagram were omitted, because they are normally part of the respective GUI frameworks.
 
+##### UML Description
+
+The UML diagram is based on the diagram from last exercise so only the description of the new class<br>`LibraryManagementController` and the interface `LibraryManagementContorllerInterface`.
+
+To adept our program structure to the GRASP approach we now added a new controller class.<br>This class is called `LibraryManagementController` and implements the interface<br>`LibraryManagementControllerInterface`. The controller connects our single management classes<br>(`UserManagment, RentalMangment, Catalogue`) to the user interface. This can be seen in the methods<br>which have to be implemented. The methods all have a very similar structure, because they all wait for an<br>event to happen in our case it is a button click. When the event happens, the method in the controller will<br>read arguments from the user interface or database and will invoke a method from one of the management classes.<br>
+
+Here an example of the method naming of the methods from the `LibraryManagementControllerInterface`:
+
+```java
+onBtnClicked<method to invoke>(Event clickEvent){}
+```
+
+
+
 ## Exercise 2
 
 #### Catalogue
