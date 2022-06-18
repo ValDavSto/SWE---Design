@@ -330,7 +330,7 @@
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="225.228515625" x="22.3857421875" xml:space="preserve" y="3.0">LibraryManagementController<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="false">
             <y:AttributeLabel xml:space="preserve"/>
-            <y:MethodLabel xml:space="preserve">main(args : String)</y:MethodLabel>
+            <y:MethodLabel xml:space="preserve"/>
           </y:UML>
         </y:UMLClassNode>
       </data>
@@ -339,10 +339,10 @@
       <data key="d4" xml:space="preserve"/>
       <data key="d6">
         <y:UMLClassNode>
-          <y:Geometry height="245.81156514157897" width="270.0" x="-91.94442964467191" y="1289.0281214355416"/>
+          <y:Geometry height="366.1814942195931" width="394.13803120567366" x="-151.94098907729614" y="1278.9798490951157"/>
           <y:Fill color="#F2F2F2" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="34.265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="291.7138671875" x="-10.85693359375" xml:space="preserve" y="3.0">&lt;&lt;interface&gt;&gt;
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="34.265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="291.7138671875" x="51.21208200908683" xml:space="preserve" y="3.0">&lt;&lt;interface&gt;&gt;
 LibraryManagementControllerInterface<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="false">
             <y:AttributeLabel xml:space="preserve"/>
@@ -351,13 +351,23 @@ LibraryManagementControllerInterface<y:LabelModel><y:SmartNodeLabelModel distanc
 + onBtnClickedCreateBook(clickEvent : Event)
 + onBtnClickedCheckISBN(clickEvent : Event)
 + onBtnClickedGeneateBibTex(clickEvent : Event)
++ onBtnClickedRemoveBook(clickEvent : Event)
++ onBtnClickedCheckBookAvailability(clickEvent : Event)
++ onBtnClickedFindBookLocation(clickEvent : Event)
++ onbtnClickedOpenOnlineLocation(clickEvent : Event)
 
 + onBtnClickedRentBook(clickEvent : Event)
 + onBtnClickedReturnBook(clickEvent : Event)
 + onBtnClickedReservateCopy(clickEvent : Event)
++ onBtnClickedAuthenticateUser(clickEvent : Event)
 
 + onBtnClickedDeactivateUser(clickEvent : Event)
-+ onBtnClickedRegisterUser(clickEvent : Event)</y:MethodLabel>
++ onBtnClickedRegisterUser(clickEvent : Event)
++ onBtnClickedExtendRental(clickEvent : Event)
++ onBtnClickedReportBookRentalHistory(clickEvent : Event)
++ onBtnClickedReportLenderRentalHistory(clickEvent : Event)
++ onBtnClickedReserveBook(clickEvent : Event)
++ onBtnClickedRemindUser(clickEvent : Event) </y:MethodLabel>
           </y:UML>
         </y:UMLClassNode>
       </data>
