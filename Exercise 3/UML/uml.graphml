@@ -237,7 +237,7 @@
         copyID : Integer) : True
 + reportBookRentalHistory(book : Book) : Integer
 + reportLenderRentalHistory(lender : Lender)
-+ reserverBook(lender : Lender,
++ reservereBook(lender : Lender,
                           book : Book)
 + remindUser(lender : Lender)
 
@@ -354,7 +354,7 @@ LibraryManagementControllerInterface<y:LabelModel><y:SmartNodeLabelModel distanc
 + onBtnClickedRemoveBook(clickEvent : Event)
 + onBtnClickedCheckBookAvailability(clickEvent : Event)
 + onBtnClickedFindBookLocation(clickEvent : Event)
-+ onbtnClickedOpenOnlineLocation(clickEvent : Event)
++ onBtnClickedOpenOnlineLocation(clickEvent : Event)
 
 + onBtnClickedRentBook(clickEvent : Event)
 + onBtnClickedReturnBook(clickEvent : Event)

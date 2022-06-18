@@ -1,5 +1,13 @@
 # SWE Design - Sheet 3
 
+## Exercise 1
+
+![uml](/home/max/GitHub/SWE---Design/Exercise 3/UML/uml.png)
+
+(The diagram includes the methods added in exercise 3 and the corresponding controller methods)
+
+
+
 ## Exercise 2
 
 #### Catalogue
