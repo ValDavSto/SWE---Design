@@ -38,7 +38,7 @@ As mentioned above the `Catalogue` class is the **information expert** for the m
 
 `authenticateUser`; 
 
-The class `UserManagment` is the **information expert** for the management of the users using the LibSoft System. With the method `registerUser` the class functions as a **creator** for objects of the class `Lender`. With the method `authenticateUser` is also in the class to ensure high **cohesion** and low **coupling**.
+The class `UserManagment` is the **information expert** for the management of the users using the LibSoft System. The method `authenticateUser` is **creator** of the objects of the class `Lender`. As only relation to the Class Lender exist we fulfill **low coupling** here.
 
 #### RentalManagement
 
