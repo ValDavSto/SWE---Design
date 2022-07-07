@@ -106,7 +106,7 @@ post-condition: the Copy does not exist in the inventory anymore
 
 method signature: `addController()` (it cant be differentiated between controllers)
 
-pre-condition: `assert console.getControllerCount() < 4 && console.getControllerCount() >= 1` (console is an Object of the class 							`GamingConsole` and `getControllerCount()` is a method which returns the number of connected controllers)
+pre-condition: `assert console.getControllerCount() < 4 && console.getControllerCount() >= 2` (console is an Object of the class 							`GamingConsole` and `getControllerCount()` is a method which returns the number of connected controllers)
 
 post-condition: `assert console.getControllerCount() <= 4 && console.getControllerCount() >= 2`
 
