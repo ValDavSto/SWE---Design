@@ -2,7 +2,9 @@
 
 #### 1) Adapter
 
-The Library Managements System of the other university's has a different implementation, but we still want to be able to only have one search method for all inventories. For this reason the implementation of the other library need to be adapted to our implementation, to realize this we take use of the Adapter pattern.  In our case the target is our implemented search. The adaptee is the implementation of the REST API (Not completely sure) of the other universities. For each university we need a separate adapter class, because each implementation is different (assumption). 
+The Library Managements System of the other university's has a different implementation, but we still want to be able to only have one search method for all inventories. For this reason the implementation of the other library need to be adapted to our implementation, to realize this we take use of the Adapter pattern.  In our case the target is our implemented search. The adaptee is the implementation of the REST API (Not completely sure) of the other universities. For each university we need a separate adapter class, because each implementation is different (assumption).
+
+![uml](/home/max/GitHub/SWE---Design/Exercise 4/uml.png)
 
 
 
