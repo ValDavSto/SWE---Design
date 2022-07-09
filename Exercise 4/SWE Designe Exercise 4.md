@@ -40,7 +40,7 @@ method signature: `getNextElement()`
 
 pre-condition: `assert queue.isEmpty() == false`
 
-post-condition: ??
+post-condition: `assert queue.size() - 1 == true`
 
 
 
@@ -48,19 +48,19 @@ post-condition: ??
 
 method signature: `setAge(int newAge)`
 
-pre-condition: `assert newAge >= 0 && newAge % 2 == 0`
+pre-condition: `assert newAge >= 0`
 
-post-condition: `assert newAge >= 0 && newAge % 2 == 0 ` ??
+post-condition: `assert newAge >= 0`
 
 
 
 **setBirthday:**
 
-method signature: `setBirthday(LocalDate Birthday)`
+method signature: `setBirthday(LocalDate birthday)`
 
-pre-condition: ?
+pre-condition: `assert birthday.getMonth() <= 12 && birthday.getMonth > 0`
 
-post-condition: ?
+post-condition: ???
 
 
 
@@ -78,9 +78,9 @@ post-condition: availability has to be at least one lower than before (not perfe
 
 method signature: `retunrBook(int copyID)`
 
-pre-condition: `` (If the lender still has the book or it is damaged can not be tested by the program)
+pre-condition: `assert checkCopy(copyID) == true` Checks if id exist
 
-post-condition: `` availability has to be at least one higher than before
+post-condition: `assert checkCopyAvailable(copyID) == true` Check if copy with certain id is available
 
 
 
@@ -98,9 +98,9 @@ post-condition: new Copy can be find with its id in the inventory
 
 method signature: `deleteCopy(Copy copy)`
 
-pre-condition: the Copy exists in the inventory
+pre-condition: `assert checkCopy(copy.getID()) == true` The Copy exists in the inventory
 
-post-condition: the Copy does not exist in the inventory anymore
+post-condition: `assert checkCopy(copy.getID() == false` Copy does not exist in the inventory anymore
 
 
 
